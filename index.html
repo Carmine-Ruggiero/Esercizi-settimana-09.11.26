@@ -2,110 +2,262 @@
 <html lang="it">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>EpiShop — E-commerce</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>EpiShop — E-commerce</title>
+	<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+        <script type="module" src="assets/js/script.js"></script>
 </head>
 
 <body>
 
-  <header>
-    <nav class="navbar navbar-expand-md navbar-dark bg-primary border border-primary">
-      <div class="container-fluid">
-        <!-- 1. Il Brand/Logo (opzionale, ma standard a sinistra) -->
-        <a class="navbar-brand" href="#">EpiShop</a>
-        <div class="collapse navbar-collapse">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+			<div class="container-fluid">
+				<!-- Nome del sito o Logo -->
+				<a class="navbar-brand" href="#">EpiShop</a>
 
-          <ul class="navbar-nav text-center ms-md-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Active</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
-            </li>
-          </ul>
-        </div>
+				<!-- Pulsante Hamburger (visibile solo su mobile) -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-      </div>
-    </nav>
-  </header>
+				<!-- Voci del Menu -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Spedizioni</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Prodotti</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Contatti</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</header>
 
+	<!--CAOUSEL -->
+	<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+		<div class="carousel-inner">
 
-  <!-- Sezione -->
-  <section class="py-5">
-    <div class="container text-center fw-bold">
-      <div class="row">
-        <div class="col-lg-8 mx-auto fw-3">
-          <h2>Saldi di primavera</h2>
-        </div>
+			<div class="carousel-item active">
+				<div class="d-flex flex-column justify-content-center align-items-center bg-dark text-white"
+					style="height: 300px;">
+					<h2>Spedizione Gratis</h2>
+					<p class="lead">Inserisci qui il testo del tuo paragrafo.</p>
+				</div>
+			</div>
 
-        <div>
-          <p>Scopri le offerte sui prodotti in evidenza, fino al 50% di sconto</p>
-        </div>
-      </div>
-      <button type="button" class="btn btn-primary"
-        style="--bs-btn-padding-y: .25rem; --bs-btn-padding-x: .5rem; --bs-btn-font-size: .75rem;">
-        Vedi i prodotti
-      </button>
-    </div>
-  </section>
+			<div class="carousel-item active">
+				<div class="d-flex flex-column justify-content-center align-items-center bg-dark text-white"
+					style="height: 300px;">
+					<h2>Spedizione Gratis</h2>
+					<p class="lead">Inserisci qui il testo del tuo paragrafo.</p>
+				</div>
+			</div>
 
-  <main class="container my-4">
+			<div class="carousel-item active">
+				<div class="d-flex flex-column justify-content-center align-items-center bg-dark text-white"
+					style="height: 300px;">
+					<h2>Spedizione Gratis</h2>
+					<p class="lead">Inserisci qui il testo del tuo paragrafo.</p>
+				</div>
+			</div>
 
+		</div>
 
+		<main class="container my-4">
+			<div class="row">
 
-    <div class="row">
+				<aside>
 
-      <aside>
+					<h5 class="fw-bold mb-3 tezt-primary">Categorie</h5>
+					<ul class="list-unstyled d-grid gap-2 m-0">
+						<li class="text-secondary text-decoration-none link-dark">Scarpe</li>
+						<li class="text-secondary text-decoration-none link-dark">Accessori</li>
+						<li class="text-secondary text-decoration-none link-dark">T shirts</li>
+						<li class="text-secondary text-decoration-none link-dark">Pantaloni</li>
+					</ul>
 
-        <h5 class="fw-bold mb-3 tezt-primary">Categorie</h5>
-        <ul class="list-unstyled d-grid gap-2 m-0">
-      <li class="text-secondary text-decoration-none link-dark">Scarpe</li>
-      <li class="text-secondary text-decoration-none link-dark">Accessori</li>
-      <li class="text-secondary text-decoration-none link-dark">T shirts</li>
-      <li class="text-secondary text-decoration-none link-dark">Pantaloni</li>
-        </ul>
+				</aside>
 
-      </aside>
+				<section>
+					<h3 class="fw-bold mb-4">Prodotti in evidenza</h3>
 
-      <section>
+					<!-- Griglia interna delle schede prodotto -->
+					<!-- 1 colonna su mobile, 2 su tablet (md), 3 su desktop (xl) -->
+					<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
 
-        <div class="card border-0" >
-          <div class="rounded-3 mb-2" style="background-color: #6C7A89; aspect-ratio: 4 / 3; width: 100%;"></div>
-          <div class="card-body p-0">
-            <h5 class="card-title fw-bold m-0" style="color: #2D3142;">Sneaker Run</h5>
-            <p class="card-text text-muted m-0 fs-5">€ 89,00</p>
-          </div>
-        </div>
+						<!-- Prodotto 1 -->
+						<div class="col">
+							<div class="card h-100 p-3 border-0 shadow-sm">
+								<div class="bg-secondary bg-opacity-25 rounded mb-3" style="height: 180px;"></div>
+								<h5 class="fw-bold fs-6 mb-1">Sneaker Run</h5>
+								<p class="text-muted m-0">€ 89,00</p>
+							</div>
+						</div>
 
-        <div class="card border-0" >
-          <div class="rounded-3 mb-2" style="background-color: #6C7A89; aspect-ratio: 4 / 3; width: 100%;"></div>
-          <div class="card-body p-0">
-            <h5 class="card-title fw-bold m-0" style="color: #2D3142;">Sneaker Run</h5>
-            <p class="card-text text-muted m-0 fs-5">€ 89,00</p>
-          </div>
-        </div>
+						<!-- Prodotto 2 -->
+						<div class="col">
+							<div class="card h-100 p-3 border-0 shadow-sm">
+								<div class="bg-secondary bg-opacity-25 rounded mb-3" style="height: 180px;"></div>
+								<h5 class="fw-bold fs-6 mb-1">T-shirt basic</h5>
+								<p class="text-muted m-0">€ 19,00</p>
+							</div>
+						</div>
 
-        <div class="card border-0" >
-          <div class="rounded-3 mb-2" style="background-color: #6C7A89; aspect-ratio: 4 / 3; width: 100%;"></div>
-          <div class="card-body p-0">
-            <h5 class="card-title fw-bold m-0" style="color: #2D3142;">Sneaker Run</h5>
-            <p class="card-text text-muted m-0 fs-5">€ 89,00</p>
-          </div>
-        </div>
-      </section>
-      
-    </div>
+						<!-- Prodotto 3 -->
+						<div class="col">
+							<div class="card h-100 p-3 border-0 shadow-sm">
+								<div class="bg-secondary bg-opacity-25 rounded mb-3" style="height: 180px;"></div>
+								<h5 class="fw-bold fs-6 mb-1">Borsa city</h5>
+								<p class="text-muted m-0">€ 49,00</p>
+							</div>
+						</div>
 
-  </main>
-<footer class="container-fluid bg-dark text-white text-center">
-  <p> &copy 206 Epishop- Tutti i diritti riservati</p>
-  </footer>
+					</div>
+		</main>
+		<footer class="bg-dark text-white py-4 mt-5">
+			<div class="container text-center">
+				<p class="m-0">© 2026 EpiShop — tutti i diritti riservati</p>
+			</div>
+		</footer>
+
 
 </body>
 
 </html>
+
+
+<!--
+<!doctype html>
+<html lang="it" data-bs-theme="dark">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>BootStrap</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<script type="module" src="assets/js/script.js"></script>
+	</head>
+	<body>
+		<button type="button" id="theme">CAMBIA TEMA</button>
+		<h1 class="text-center">BOOTSTRAP</h1>
+		<div class="container-lg">
+			<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3">
+				<div
+					class="col border border-1 border-light bg-warning fw-bold"
+				>
+					<p class="h1">COLONNA 1</p>
+				</div>
+				<div class="col border border-1 border-light bg-info fw-bold">
+					<p class="h1">COLONNA 2</p>
+				</div>
+				<div class="col border border-1 border-light bg-danger fw-bold">
+					<p class="h1">COLONNA 3</p>
+				</div>
+				<div
+					class="col border border-1 border-light bg-primary fw-bold"
+				>
+					<p class="h1">COLONNA 4</p>
+				</div>
+				<div
+					class="col border border-1 border-light bg-secondary fw-bold"
+				>
+					<p class="h1">COLONNA 5</p>
+				</div>
+				<div
+					class="col border border-1 border-light bg-success fw-bold"
+				>
+					<p class="h1">COLONNA 6</p>
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<div class="container-lg">
+			<div class="row">
+				<div class="col-6 col-md-4 border border-3">PRIMO BOX</div>
+				<div class="col-6 col-md-4 border border-3">SECONDO BOX</div>
+				<div class="col-6 col-md-4 border border-3">TERZO BOX</div>
+				<div class="col-6 col-md-6 col-lg-4 border border-3">
+					QUARTO BOX
+				</div>
+				<div class="col-12 col-md-6 col-lg-8 border border-3">
+					QUINTO BOX
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<div class="container-lg">
+			<div class="row gx-4">
+				<div class="col-12 col-lg-7 order-lg-2 border border-3">
+					MAIN
+				</div>
+				<div class="col-12 col-lg-3 order-lg-1 border border-3">
+					NEWS
+				</div>
+				<div class="col-12 col-lg-2 order-lg-3 border border-3">
+					ASIDE
+				</div>
+			</div>
+		</div>
+
+		<hr />
+
+		<div class="container">
+			<div class="row">
+				<div class="col-7 border border-3">
+					<div class="container">
+						<div class="row">
+							<div class="col-6 border border-1">ANNIDATA 1</div>
+							<div class="col-6 border border-1">ANNIDATA 2</div>
+							<div class="col-6 border border-1">ANNIDATA 3</div>
+							<div class="col-6 border border-1">ANNIDATA 4</div>
+						</div>
+					</div>
+				
+		</div>
+
+		<hr />
+
+		<h3 class="myClass fs-3">CLASSE PERSONALIZZATA</h3>
+
+		<hr />
+
+		<h2>ESEMPIO CARD</h2>
+
+		<div class="container">
+			<div class="border rounded shadow-sm p-3 bg-white">
+				CARD SEMPLICE
+			</div>
+		</div>
+	</body>
+</html>
+
+
+
+
+-->
